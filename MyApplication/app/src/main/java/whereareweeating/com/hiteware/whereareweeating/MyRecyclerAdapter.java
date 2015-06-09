@@ -29,11 +29,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<FeedListRowHolder> {
     public void onBindViewHolder(FeedListRowHolder feedListRowHolder, int i) {
         FeedItem feedItem = feedItemList.get(i);
 
-//        Picasso.with(mContext).load(feedItem.getThumbnail())
-//                .error(R.drawable.placeholder)
-//                .placeholder(R.drawable.placeholder)
-//                .into(feedListRowHolder.thumbnail);
-
         feedListRowHolder.title.setText(Html.fromHtml(feedItem.getTitle()));
     }
 
